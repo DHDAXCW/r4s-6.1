@@ -45,7 +45,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         echo -e "Total CPU cores\t: $(nproc)"
-        cat /proc/cpuinfo | grep 'model name'
+        cat /proc/cpuinfo | grep 'processor'
         free -h
         uname -a
         [ -f /proc/version ] && cat /proc/version
